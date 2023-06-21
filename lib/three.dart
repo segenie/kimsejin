@@ -2,19 +2,15 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-void main() => runApp(const Three());
+void main() => runApp(const three());
 
-class Three extends StatelessWidget {
-  const Three({Key? key}) : super(key: key);
+class three extends StatelessWidget {
+  const three({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      title: '기분좋은시작',
       home: const MyHomePage(title: '오늘의운세'),
     );
   }
@@ -49,8 +45,8 @@ class _MyHomePageState extends State<MyHomePage> {
             Navigator.pop(context);
           },
         ),
-        centerTitle: true,
         backgroundColor: const Color.fromARGB(246, 246, 168, 209),
+        centerTitle: true,
       ),
       body: Center(
         child: Container(
